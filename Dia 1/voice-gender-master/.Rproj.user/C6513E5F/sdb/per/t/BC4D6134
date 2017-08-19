@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "$(document).ready(function() {\n    $('#btnUrl').click(function() {\n        if (typeof(ga) != 'undefined') {\n            ga('send', 'event', 'btnUrl', 'click', $('#url').val());\n        }\n    });\n\n    $('#file1').click(function() {\n        if (typeof(ga) != 'undefined') {\n            ga('send', 'event', 'file1', 'click');\n        }\n    });\n});",
+    "created" : 1503016392409.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4228448469",
+    "id" : "BC4D6134",
+    "lastKnownWriteTime" : 1483376466,
+    "last_content_update" : 1483376466,
+    "path" : "~/Documents/voice-gender-master/Web/www/script.js",
+    "project_path" : "Web/www/script.js",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "js"
+}
