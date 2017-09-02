@@ -1,0 +1,3 @@
+Para correr presentacion, abrir consola en el directorio y correr:
+
+jupyter nbconvert Taller_Dia_3.ipynb --to slides --post serve
