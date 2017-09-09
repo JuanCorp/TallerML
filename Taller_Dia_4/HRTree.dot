@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Promovido <= 0.5\nsamples = 100.0%\nvalue = [0.5, 0.5]\nclass = No Renuncio", fillcolor="#e5813900"] ;
+1 [label="Horas Mensuales <= 199.5\nsamples = 70.0%\nvalue = [0.29, 0.71]\nclass = Renuncio", fillcolor="#399de599"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="samples = 40.0%\nvalue = [0.0, 1.0]\nclass = Renuncio", fillcolor="#399de5ff"] ;
+1 -> 2 ;
+3 [label="Horas Mensuales <= 262.0\nsamples = 30.0%\nvalue = [0.67, 0.33]\nclass = No Renuncio", fillcolor="#e581397f"] ;
+1 -> 3 ;
+4 [label="samples = 20.0%\nvalue = [1.0, 0.0]\nclass = No Renuncio", fillcolor="#e58139ff"] ;
+3 -> 4 ;
+5 [label="samples = 10.0%\nvalue = [0.0, 1.0]\nclass = Renuncio", fillcolor="#399de5ff"] ;
+3 -> 5 ;
+6 [label="samples = 30.0%\nvalue = [1.0, 0.0]\nclass = No Renuncio", fillcolor="#e58139ff"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}

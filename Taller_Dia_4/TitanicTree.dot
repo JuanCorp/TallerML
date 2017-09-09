@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Sexo <= 0.5\nsamples = 100.0%\nvalue = [0.64, 0.36]\nclass = No Sobrevivio", fillcolor="#e581396e"] ;
+1 [label="Clase <= 2.5\nsamples = 33.5%\nvalue = [0.26, 0.74]\nclass = Sobrevivio", fillcolor="#399de5a7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Costo <= 26.125\nsamples = 18.7%\nvalue = [0.04, 0.96]\nclass = Sobrevivio", fillcolor="#399de5f4"] ;
+1 -> 2 ;
+3 [label="samples = 6.7%\nvalue = [0.11, 0.89]\nclass = Sobrevivio", fillcolor="#399de5df"] ;
+2 -> 3 ;
+4 [label="samples = 12.0%\nvalue = [0.0, 1.0]\nclass = Sobrevivio", fillcolor="#399de5ff"] ;
+2 -> 4 ;
+5 [label="Puerto S <= 0.5\nsamples = 14.8%\nvalue = [0.53, 0.47]\nclass = No Sobrevivio", fillcolor="#e581391e"] ;
+1 -> 5 ;
+6 [label="samples = 5.8%\nvalue = [0.32, 0.68]\nclass = Sobrevivio", fillcolor="#399de586"] ;
+5 -> 6 ;
+7 [label="samples = 9.0%\nvalue = [0.67, 0.33]\nclass = No Sobrevivio", fillcolor="#e581397f"] ;
+5 -> 7 ;
+8 [label="Edad <= 13.0\nsamples = 66.5%\nvalue = [0.83, 0.17]\nclass = No Sobrevivio", fillcolor="#e58139ca"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Hermanos/Parejas <= 2.5\nsamples = 4.7%\nvalue = [0.4, 0.6]\nclass = Sobrevivio", fillcolor="#399de555"] ;
+8 -> 9 ;
+10 [label="samples = 2.6%\nvalue = [0.0, 1.0]\nclass = Sobrevivio", fillcolor="#399de5ff"] ;
+9 -> 10 ;
+11 [label="samples = 2.1%\nvalue = [0.91, 0.09]\nclass = No Sobrevivio", fillcolor="#e58139e6"] ;
+9 -> 11 ;
+12 [label="Costo <= 26.2687\nsamples = 61.8%\nvalue = [0.86, 0.14]\nclass = No Sobrevivio", fillcolor="#e58139d6"] ;
+8 -> 12 ;
+13 [label="samples = 44.8%\nvalue = [0.93, 0.07]\nclass = No Sobrevivio", fillcolor="#e58139eb"] ;
+12 -> 13 ;
+14 [label="samples = 17.0%\nvalue = [0.68, 0.32]\nclass = No Sobrevivio", fillcolor="#e5813988"] ;
+12 -> 14 ;
+}
